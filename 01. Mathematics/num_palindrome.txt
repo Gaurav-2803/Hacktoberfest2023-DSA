@@ -1,0 +1,15 @@
+Write a function that tests whether a number is a palindrome.
+
+Solution : 
+
+def isPalindrome(n):  # user-defined function
+    n = str(n)
+    l = []
+    for i in n:
+        l.append(i)
+    rev_l = l[::-1]
+
+    return "Yes" if l == rev_l else "No"
+
+num = int(input("number : "))
+print(isPalindrome(num))
